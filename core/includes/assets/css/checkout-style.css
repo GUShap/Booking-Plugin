@@ -1,0 +1,106 @@
+.elementor-widget-woocommerce-checkout-page .woocommerce .shop_table tbody td .product-quantity{
+    display: none;
+}
+
+.elementor-widget-woocommerce-checkout-page .woocommerce .product-name .variation{
+    margin-bottom: 20px;
+}
+
+.deposit-payment-options-container,
+.participants-details-container{
+    background: var(--sections-background-color,#fff);
+    border-radius: var(--sections-border-radius,3px);
+    padding: var(--sections-padding,16px 30px);
+    margin: var(--sections-margin,0 0 24px 0);
+    border: 1px var(--sections-border-type,solid) var(--sections-border-color,#d5d8dc);
+}
+
+.participants-details-container .room-participants-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px 15px;
+}
+
+.participants-details-container .room-participants-wrapper:not(:last-of-type){
+    margin-bottom: 35px;
+}
+
+.participants-details-container .room-participants-wrapper p{
+    margin: 0;
+}
+
+.room-participants-heading{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.participants-details-container .input-wrapper.type-checkbox{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: calc(50% - 7px);
+}
+
+.participants-details-container .input-group-wrapper .input-wrapper{
+    margin-bottom: 8px;
+}
+
+.deposit-payment-options-container .deposit-payment-info{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.deposit-payment-options-wrapper,
+.deposit-payment-option{
+    display: flex;
+    align-items: center;
+}
+
+.deposit-payment-options-wrapper{
+    justify-content: space-between;
+}
+
+.deposit-payment-option{
+    gap: 5px;
+}
+
+.deposit-amount{
+    font-weight: 600;
+}
+
+.item-wrapper{
+    /* margin-bottom: 10px; */
+}
+
+.item-wrapper p {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.item-wrapper button.remove-upsell{
+    padding: 0 !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50% !important;
+    line-height: 1 !important;
+    border-color: #7a6366 !important;
+    outline: none !important;
+    transition: all 0.3s linear !important;
+}
+
+.item-wrapper button.remove-upsell.loading{
+    /* color: #7a6366; */
+    background-color: #fff;
+    border: 2px dashed #7a6366;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
